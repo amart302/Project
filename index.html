@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-logo">
+            <div class="logo-img">
+              <img src="./img/logotip/logo.svg" alt="" />
+            </div>
+            <div class="logo-btn"></div>
+          </div>
+          <div class="header-ru">
+            <select name="languages" id="">
+              <option value="">
+                <img src="./img/Frame 413.svg" alt="" />
+                <span>UK</span>
+              </option>
+              <option value="">
+                <img src="" alt="" />
+                <span></span>
+              </option>
+              <option value="">
+                <img src="" alt="" />
+                <span></span>
+              </option>
+            </select>
+          </div>
+          <div class="header-main">
+            <a href="">Главная</a>
+            <a href="">Доставка</a>
+            <a href="">О нас</a>
+            <a href="">Новости</a>
+          </div>
+          <div class="header-number">
+            <img src="./img/zvon.svg" alt="" />
+            <a href="">+38 097 699 34 38</a>
+          </div>
+          <div class="header-icon-1">
+            <div class="icon-btn-1">
+              <a href=""><img src="./img/izbr.svg" alt="" /></a>
+            </div>
+
+            <div class="icon-btn-2">
+              <a href=""><img src="./img/like.svg" alt="" /></a>
+            </div>
+
+            <div class="icon-btn-3">
+              <a href=""><img src="./img/login.svg" alt="" /></a>
+            </div>
+
+            <div class="icon-btn-4" id="openBasket">
+              <p>Корзина</p>
+              <img src="./img/kr.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <div class="nav-container">
+          <div class="nav-icon">
+            <div class="nav-btn-1">
+              <a href="">
+                <img src="./img-2/0.svg" alt="" />
+                <p>Роллы</p>
+              </a>
+            </div>
+            <div class="nav-btn-2">
+              <a href="">
+                <img src="./img-2/1.svg" alt="" />
+                <p>Суши</p>
+              </a>
+            </div>
+            <div class="nav-btn-3">
+              <a href="">
+                <img src="./img-2/2.svg" alt="" />
+                <p>Сеты</p>
+              </a>
+            </div>
+            <div class="nav-btn-4">
+              <a href="">
+                <img src="./img-2/3.svg" alt="" />
+                <p>Боулы</p>
+              </a>
+            </div>
+            <div class="nav-btn-5">
+              <a href="">
+                <img src="./img-2/4.svg" alt="" />
+                <p>Напитки</p>
+              </a>
+            </div>
+            <div class="nav-btn-6">
+              <a href="">
+                <img src="./img-2/5.svg" alt="" />
+                <p>Соусы</p>
+              </a>
+            </div>
+            <div class="nav-btn-7">
+              <a href="">
+                <img src="./img-2/6.svg" alt="" />
+                <p>Неизв...</p>
+              </a>
+            </div>
+            <div class="nav-btn-8">
+              <a href="">
+                <img src="./img-2/6.svg" alt="" />
+                <p>Неизв...</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="basketBlock" id="basketBlock">
+      <div class="basketHeader">
+        <h1>Ваш заказ</h1>
+        <div class="closeBasketBlock" id="closeBasket">
+          <img src="./img-3/crossImg.svg" class="closeImg" id="closeBasket" />
+        </div>
+      </div>
+      <div id="basket">
+        <img src="./img-3/emptyBasketImg.svg" id="emptyBasketImg" />
+        <h2 id="emptyBasketH2">В вашей корзине пока пусто</h2>
+        <span id="emptyBasketSpan"
+          >Тут появятся товары, которые вы добавите</span
+        >
+      </div>
+
+      <div class="basketFooter">
+        <div>
+          <span id="totalBasket">Итого</span>
+          <span id="totalBasketPrice"></span>
+        </div>
+        <button id="placeAnOrderBtn">Оформить заказ</button>
+      </div>
+    </div>
+    <div class="nav_main">
+      <div class="container-1">
+        <div class="container-nav_main">
+          <div class="block_nav-1">
+            <div class="block_nav_tex">
+              <div class="nav_tex-1">
+                <p>
+                  Ninja Sushi <br />
+                  в Ингушетии! <br />
+                  Пока только в <br />
+                  Магасе!
+                </p>
+              </div>
+              <div class="nav_tex-2">
+                <p>Доставку делаем с 10:00 до 21:00</p>
+              </div>
+              <button class="nav_tex_btn">Перейти к новости</button>
+            </div>
+
+            <img src="./img-2/ban.png" alt="" class="block_nav_img" />
+          </div>
+          <div class="block_nav-2"></div>
+          <div class="block_nav-3"></div>
+          <div class="block_nav-4"></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container-2">
+        <div class="main_container-1">
+          <p class="text_main">Суши</p>
+          <button class="btn_main-1">Смотреть все</button>
+        </div>
+        <div id="conteiner-1"></div>
+      </div>
+      <div class="container-2">
+        <div class="main_container-1">
+          <p class="text_main">Роллы</p>
+          <button class="btn_main-1">Смотреть все</button>
+        </div>
+        <div id="conteiner-2"></div>
+      </div>
+    </main>
+
+    <script src="./menu-1.js"></script>
+  </body>
+</html>
