@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(223, 222, 222);
+      }
+      /* header */
+      header {
+        display: grid;
+        align-items: center;
+        gap: 10px;
+        grid-template-columns: 0.6fr 1fr 0.4fr 0.8fr;
+        background-color: white;
+        max-width: 1600px;
+        margin-inline: auto;
+        padding: 10px;
+        border-radius: 12px;
+      }
+      .logoImg {
+        /* width: 15%; */
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        transition: all 0.2s;
+      }
+      nav a:hover {
+        color: #ff6633;
+      }
+      .phoneNumber {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .phoneNumber span {
+        font-size: 18px;
+      }
+      .headBtns {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+      }
+      .notificationsBlock,
+      .likeBlock,
+      .profileBlock {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        border: solid 1px gray;
+        border-radius: 12px;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      .notificationsBlock:hover,
+      .likeBlock:hover,
+      .profileBlock:hover {
+        background-color: #ff6633;
+      }
+      .basketBlock {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        border: solid 1px gray;
+        border-radius: 12px;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      .basketBlock:hover {
+        background-color: #ff6633;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logoImg" src="./imgNews/logo.svg" />
+      <nav>
+        <select name="languages" id="">
+          <option value="">Russian</option>
+          <option value="">English</option>
+        </select>
+        <a href="">Главная</a>
+        <a href="">Доставка</a>
+        <a href="">О нас</a>
+        <a href="">Новости</a>
+      </nav>
+      <div class="phoneNumber">
+        <img src="./imgNews/phoneImg.svg" />
+        <span>+38 097 699 34 38</span>
+      </div>
+      <div class="headBtns">
+        <div class="notificationsBlock">
+          <img src="./imgNews/notificationImg.svg" />
+        </div>
+        <div class="likeBlock"><img src="./imgNews/likeImg.svg" /></div>
+        <div class="profileBlock"><img src="./imgNews/profileImg.svg" /></div>
+        <div class="basketBlock">
+          <span>Корзина</span>
+          <img src="./imgNews/basketImg.svg" />
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+  </body>
+</html>
