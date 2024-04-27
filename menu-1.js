@@ -301,8 +301,8 @@ function createProductCards() {
     if (i < 8) document.getElementById("conteiner-1").appendChild(divCard);
     else if(i >= 8 || i < 16) document.getElementById("conteiner-2").appendChild(divCard);
     else document.getElementById("conteiner-3").appendChild(divCard);
-    const divlabels = document.getElementById("divlabels" + i);
 
+    const divlabels = document.getElementById("divlabels" + i);
     if (products[i].hit == true) {
       divlabels.innerHTML += '<div class="hitBlock">Hit</div>';
     }
@@ -392,7 +392,7 @@ cards.forEach((elem) => {
   const cardBtn = elem.childNodes[4].childNodes[5];
   cardBtn.addEventListener("click", () => {
     cardId = cardBtn.id.substring(8, 10);
-    console.log(cardId);
+    // console.log(cardId);
     if (!products[cardId].basket) {
       productIndex = basketProducts.length;
       basketProducts.push(products[cardId]);
@@ -454,10 +454,10 @@ function UpdateIdBacket() {
   for (let i = 0; i < basketProducts.length; i++) {
     allBasketCard[i].id = "basketCard" + i;
     allQuantity[i].id = "quantity" + i;
-    allplusQuantity[i].id = "plusQuantity" + i;
-    allplusImg[i].id = "plusQuantity" + i;
-    allminusQuantity[i].id = "minusQuantity" + i;
-    allminusImg[i].id = "minusQuantity" + i;
+    allplusQuantity[i].id = "plusBlock" + i;
+    allplusImg[i].id = "plusBlock" + i;
+    allminusQuantity[i].id = "minusBlock" + i;
+    allminusImg[i].id = "minusBlock" + i;
     allcrossBlock[i].id = "crossBlock" + i;
     allcrossImg[i].id = "crossBlock" + i;
   }
@@ -465,7 +465,7 @@ function UpdateIdBacket() {
 
 document.getElementById("basket").addEventListener("click", (event) => {
   const idPlusBlock = event.srcElement.id.substring(9, 11);
-
+  console.log(idPlusBlock);
   const quantity = document.getElementById("quantity" + idPlusBlock);
   if (
     event.target.classList.contains("plusBlock") ||
@@ -478,6 +478,7 @@ document.getElementById("basket").addEventListener("click", (event) => {
 });
 document.getElementById("basket").addEventListener("click", (event) => {
   const idMinusBlock = event.srcElement.id.substring(10, 12);
+  // console.log(idMinusBlock);
   const quantity = document.getElementById("quantity" + idMinusBlock);
   if (
     event.target.classList.contains("minusBlock") ||
